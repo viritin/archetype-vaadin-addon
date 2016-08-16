@@ -21,9 +21,9 @@
         <Vaadin-Addon>${project.artifactId}-${project.version}.jar</Vaadin-Addon>
     </properties>
     <scm>
-        <url>git://github.com/your-github-account/${project.name}</url>
-        <connection>scm:git:git://github.com/your-github-account/${project.name}.git</connection>
-        <developerConnection>scm:git:ssh://git@github.com:/your-github-account/${project.name}.git</developerConnection>
+        <url>git://github.com/your-github-account/${artifactId}.git</url>
+        <connection>scm:git:git://github.com/your-github-account/${artifactId}.git</connection>
+        <developerConnection>scm:git:ssh://git@github.com:/your-github-account/${artifactId}.git</developerConnection>
     </scm>
     <issueManagement>
         <system>GitHub</system>
@@ -139,7 +139,7 @@
                 <artifactId>maven-release-plugin</artifactId>
                 <version>2.5.3</version>
                 <configuration>
-                    <releaseProfiles>directorypackage</releaseProfiles>
+                    <releaseProfiles>directorypackage,browsertests</releaseProfiles>
                 </configuration>
             </plugin>
         </plugins>
@@ -171,6 +171,30 @@
                     </plugin>
                 </plugins>
             </build>
+        </profile>
+        <profile>
+            <id>browsertests</id>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-failsafe-plugin</artifactId>
+                        <version>2.19.1</version>
+                        <executions>
+                            <execution>
+                                <goals>
+                                    <goal>integration-test</goal>
+                                    <goal>verify</goal>
+                                </goals>
+                            </execution>
+                        </executions>
+                    </plugin>
+                </plugins>
+            </build>
+            <activation>
+                <!-- Change to run browser tests on each build -->
+                <activeByDefault>false</activeByDefault>
+            </activation>
         </profile>
     </profiles>
     

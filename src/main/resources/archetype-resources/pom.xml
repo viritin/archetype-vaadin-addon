@@ -27,7 +27,7 @@
     </scm>
     <issueManagement>
         <system>GitHub</system>
-        <url>https://github.com/your-github-account/viritin/issues</url>
+        <url>https://github.com/your-github-account/${artifactId}/issues</url>
     </issueManagement>
     <licenses>
         <license>
@@ -139,7 +139,7 @@
                 <artifactId>maven-release-plugin</artifactId>
                 <version>2.5.3</version>
                 <configuration>
-                    <releaseProfiles>directorypackage,browsertests</releaseProfiles>
+                    <releaseProfiles>directorypackage</releaseProfiles>
                 </configuration>
             </plugin>
         </plugins>
@@ -168,6 +168,28 @@
                                 <phase>install</phase>
                             </execution>
                         </executions>
+                    </plugin>
+                    <!-- build javadocs during development builds as well to 
+                     show javadoc syntax issues before release. Remove this 
+                     to speed up the build a bit.
+                    -->
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-javadoc-plugin</artifactId>
+                        <version>2.10.4</version>
+                        <executions>
+                            <execution>
+                                <phase>package</phase>
+                                <goals>
+                                    <goal>javadoc</goal>
+                                </goals>
+                            </execution>
+                        </executions>
+                    </plugin>
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-surefire-plugin</artifactId>
+                        <version>2.19.1</version>
                     </plugin>
                 </plugins>
             </build>

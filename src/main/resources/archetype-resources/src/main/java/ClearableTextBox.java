@@ -1,4 +1,4 @@
-package ${groupId};
+package ${package};
 
 import com.vaadin.server.FontAwesome;
 import com.vaadin.ui.Button;

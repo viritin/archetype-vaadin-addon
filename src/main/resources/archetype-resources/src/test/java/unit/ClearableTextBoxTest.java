@@ -1,6 +1,7 @@
-package ${groupId}.unit;
+package ${package}.unit;
+
 import org.junit.Test;
-import org.test.ClearableTextBox;
+import ${package}.ClearableTextBox;
 import static org.junit.Assert.*;
 
 public class ClearableTextBoxTest {

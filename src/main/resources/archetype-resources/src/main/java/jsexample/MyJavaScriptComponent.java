@@ -1,4 +1,4 @@
-package ${groupId}.jsexample;
+package ${package}.jsexample;
 
 import com.vaadin.annotations.JavaScript;
 import com.vaadin.ui.AbstractJavaScriptComponent;

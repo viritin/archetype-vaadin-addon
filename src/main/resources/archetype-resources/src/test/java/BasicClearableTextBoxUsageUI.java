@@ -1,4 +1,4 @@
-package ${groupId};
+package ${package};
 
 import com.vaadin.ui.Component;
 import com.vaadin.ui.Notification;

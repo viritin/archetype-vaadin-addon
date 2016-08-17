@@ -1,4 +1,4 @@
-package ${groupId}.uiserver;
+package ${package}.uiserver;
 
 import org.vaadin.addonhelpers.TServer;
 

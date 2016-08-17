@@ -1,7 +1,7 @@
-package ${groupId};
+package ${package};
 
 import com.vaadin.ui.Component;
-import org.test.jsexample.MyJavaScriptComponent;
+import ${package}.jsexample.MyJavaScriptComponent;
 import org.vaadin.addonhelpers.AbstractTest;
 
 public class BasicJavaScriptComponentUsageUI extends AbstractTest {

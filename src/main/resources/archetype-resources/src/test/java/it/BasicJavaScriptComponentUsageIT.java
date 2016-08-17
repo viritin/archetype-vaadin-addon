@@ -1,10 +1,10 @@
-package ${groupId}.it;
+package ${package}.it;
 
 import java.util.concurrent.TimeUnit;
 import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.test.BasicJavaScriptComponentUsageUI;
+import ${package}.BasicJavaScriptComponentUsageUI;
 import org.vaadin.addonhelpers.automated.AbstractWebDriverCase;
 import org.vaadin.addonhelpers.automated.VaadinConditions;
 import static org.junit.Assert.*;

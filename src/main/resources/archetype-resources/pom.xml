@@ -87,7 +87,7 @@
                 <extensions>true</extensions>
                 <configuration>
                     <instructions>
-                        <Export-Package>${groupId}.*</Export-Package>
+                        <Export-Package>${package}.*</Export-Package>
                     </instructions>
                 </configuration>
                 <executions>

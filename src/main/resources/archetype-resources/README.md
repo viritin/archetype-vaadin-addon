@@ -2,7 +2,7 @@
 #set($h2 = '##')
 #set($h3 = '###')
 #set($h4 = '####')
-$h1 ${artifactId}
+$h1 ${addonName}
 
 This is a Vaadin add-on project created with in.virit:vaadin-addon archetype.
 The project supports plain server side extensions and JavaScript extensions.

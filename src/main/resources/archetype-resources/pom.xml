@@ -4,6 +4,7 @@
     <groupId>${groupId}</groupId>
     <artifactId>${artifactId}</artifactId>
     <version>${version}</version>
+    <name>${addonName}</name>
     <packaging>bundle</packaging>
     <organization>
         <name>Vaadin Community</name>

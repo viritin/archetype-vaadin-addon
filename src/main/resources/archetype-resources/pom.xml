@@ -22,7 +22,7 @@
         <Vaadin-Addon>${project.artifactId}-${project.version}.jar</Vaadin-Addon>
     </properties>
     <scm>
-        <url>git://github.com/your-github-account/${artifactId}.git</url>
+        <url>https://github.com/your-github-account/${artifactId}</url>
         <connection>scm:git:git://github.com/your-github-account/${artifactId}.git</connection>
         <developerConnection>scm:git:ssh://git@github.com:/your-github-account/${artifactId}.git</developerConnection>
     </scm>

@@ -15,7 +15,7 @@ Only snapshots are so far released, but you can use them with following CLI comm
         -DarchetypeGroupId=in.virit  \
         -DarchetypeArtifactId=archetype-vaadin-addon  \
         -DarchetypeRepository=https://oss.sonatype.org/content/repositories/snapshots/  \
-        -DarchetypeVersion=1.0-SNAPSHOT
+        -DarchetypeVersion=2.0-SNAPSHOT
 
 Then see the README.md from the generated project for more instructions. 
 

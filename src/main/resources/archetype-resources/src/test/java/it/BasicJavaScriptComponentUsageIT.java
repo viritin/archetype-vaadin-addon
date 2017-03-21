@@ -9,6 +9,8 @@ import org.vaadin.addonhelpers.automated.AbstractWebDriverCase;
 import org.vaadin.addonhelpers.automated.VaadinConditions;
 import static org.junit.Assert.*;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.phantomjs.PhantomJSDriver;
+
 
 /**
  * A simple example that uses Selenium to do a browser level test for a 
@@ -49,4 +51,10 @@ public class BasicJavaScriptComponentUsageIT extends AbstractWebDriverCase {
         
         
     }
+    
+    @Override
+    protected void startBrowser() {
+        startBrowser(new PhantomJSDriver());
+    }
+
 }

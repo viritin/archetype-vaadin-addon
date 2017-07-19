@@ -1,4 +1,4 @@
-#set($weirdPackage = $groupId.replaceAll("[.]", "_"))
+#set($weirdPackage = $package.replaceAll("[.]", "_"))
 window.${weirdPackage}_jsexample_MyJavaScriptComponent = function() {
     // Create basic input element
     var el = document.createElement("input");

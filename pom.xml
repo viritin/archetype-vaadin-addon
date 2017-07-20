@@ -22,7 +22,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
     <scm>
-        <url>git://github.com/viritin/archetype-vaadin-addon.git</url>
+        <url>https://github.com/viritin/archetype-vaadin-addon</url>
         <connection>scm:git:git://github.com/viritin/archetype-vaadin-addon.git</connection>
         <developerConnection>scm:git:ssh://git@github.com:/viritin/archetype-vaadin-addon.git</developerConnection>
     </scm>

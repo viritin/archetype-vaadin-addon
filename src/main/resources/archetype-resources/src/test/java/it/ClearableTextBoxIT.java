@@ -1,5 +1,6 @@
 package ${package}.it;
 
+import ${package}.BasicClearableTextBoxUsageUI;
 
 import com.microsoft.playwright.Browser;
 import com.microsoft.playwright.BrowserType;
@@ -7,7 +8,6 @@ import com.microsoft.playwright.Locator;
 import com.microsoft.playwright.Page;
 import com.microsoft.playwright.Playwright;
 import in.virit.mopo.Mopo;
-import it.pkg.BasicClearableTextBoxUsageUI;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;

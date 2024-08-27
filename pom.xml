@@ -2,7 +2,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>in.virit</groupId>
     <artifactId>viritin-vaadin-addon-archetype</artifactId>
-    <version>2.0.1-SNAPSHOT</version>
+    <version>2.0.1</version>
     <name>viritin-vaadin-addon-archetype</name>
     <packaging>maven-archetype</packaging>
     <description>A project template to create Vaadin add-ons.</description>
@@ -27,7 +27,7 @@
         <url>https://github.com/viritin/archetype-vaadin-addon</url>
         <connection>scm:git:git://github.com/viritin/archetype-vaadin-addon.git</connection>
         <developerConnection>scm:git:ssh://git@github.com:/viritin/archetype-vaadin-addon.git</developerConnection>
-      <tag>HEAD</tag>
+      <tag>viritin-vaadin-addon-archetype-2.0.1</tag>
   </scm>
     <distributionManagement>
         <snapshotRepository>

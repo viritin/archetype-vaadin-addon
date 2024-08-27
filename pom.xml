@@ -6,6 +6,8 @@
     <version>2.0.0-SNAPSHOT</version>
     <name>viritin-vaadin-addon-archetype</name>
     <packaging>maven-archetype</packaging>
+    <description>A project template to create Vaadin add-ons.</description>
+    <url>https://github.com/viritin/archetype-vaadin-addon</url>
     <developers>
         <developer>
             <name>Matti Tahvonen</name>

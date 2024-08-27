@@ -39,31 +39,6 @@
             </includes>
         </fileSet>
 
-        <fileSet filtered="false" encoding="UTF-8">
-            <directory></directory>
-            <includes>
-                <include>assembly/*</include>
-            </includes>
-        </fileSet>
-        
     </fileSets>
 </archetype-descriptor>
 
-<!--<id>vaadin-addon</id>
-<sources>
-    <source>src/main/java/ClearableTextBox.java</source>
-    <source>src/main/java/jsexample/MyJavaScriptComponent.java</source>
-    <source>src/main/java/jsexample/MyComponentState.java</source>
-</sources>
-<resources>
-    <resource filtered="true">src/main/resources/jsexample/component-connector.js</resource>
-    <resource>README.md</resource>
-    <resource>assembly/MANIFEST.MF</resource>
-    <resource>assembly/assembly.xml</resource>
-</resources>
-<testSources>
-    <source>src/test/java/uiserver/Server.java</source>
-    <source>src/test/java/BasicClearableTextBoxUsageUI.java</source>
-    <source>src/test/java/BasicJavaScriptComponentUsageUI.java</source>
-</testSources>
-</archetype>-->

@@ -1,22 +1,20 @@
 package ${package};
 
-import com.vaadin.server.FontAwesome;
-import com.vaadin.ui.Button;
-import com.vaadin.ui.CssLayout;
-import com.vaadin.ui.TextField;
-import com.vaadin.ui.themes.ValoTheme;
+import com.vaadin.flow.component.button.Button;
+import com.vaadin.flow.component.icon.VaadinIcon;
+import com.vaadin.flow.component.orderedlayout.HorizontalLayout;
+import com.vaadin.flow.component.textfield.TextField;
 
 /**
  * A really simple example of a server side composition.
  */
-public class ClearableTextBox extends CssLayout {
+public class ClearableTextBox extends HorizontalLayout {
     
     private TextField textField = new TextField();
-    private Button clearBtn = new Button(FontAwesome.TIMES);
+    private Button clearBtn = new Button(VaadinIcon.CLOSE.create());
 
     public ClearableTextBox() {
-        addComponents(textField, clearBtn);
-        setStyleName(ValoTheme.LAYOUT_COMPONENT_GROUP);
+        add(textField, clearBtn);
         clearBtn.addClickListener(e->{textField.clear();});
     }
 

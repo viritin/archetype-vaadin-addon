@@ -1,8 +1,10 @@
 package ${package}.unit;
 
-import org.junit.Test;
+
 import ${package}.ClearableTextBox;
-import static org.junit.Assert.*;
+import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.*;
 
 public class ClearableTextBoxTest {
 

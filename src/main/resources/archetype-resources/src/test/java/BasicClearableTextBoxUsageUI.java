@@ -2,10 +2,10 @@ package ${package};
 
 import com.vaadin.flow.component.notification.Notification;
 import com.vaadin.flow.router.Route;
-import org.vaadin.firitin.components.orderedlayout.VVerticalLayout;
+import com.vaadin.flow.component.orderedlayout.VerticalLayout;
 
 @Route
-public class BasicClearableTextBoxUsageUI extends VVerticalLayout {
+public class BasicClearableTextBoxUsageUI extends VerticalLayout {
 
     public BasicClearableTextBoxUsageUI() {
         ClearableTextBox clearableTextBox = new ClearableTextBox();
